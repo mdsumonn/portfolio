@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Bootstrap Tutorial | ITBari.com</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+	 <link href="resourses/css/style.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#demo" data-offset="70">
+
+<nav id="demo" class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+	<div class="container">
+		<ul class="navbar-nav">
+			<li class="nav-item pr-2">
+				<a href="#section_wdd" class="nav-link">WDD</a>
+			</li>
+			<li class="nav-item px-2">
+				<a href="#section_seo" class="nav-link">SEO</a>
+			</li>
+			<li class="nav-item px-2">
+				<a href="#section_smm" class="nav-link">SMM</a>
+			</li>
+			<li class="nav-item px-2">
+				<a href="#section_eCom" class="nav-link">eCommerce</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+	<div class="mb-5" id="section_wdd" style="margin-top:70px;">
+		<h2>Web Design and Development</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+		
+		<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+	<div class="mb-5" id="section_seo">
+		<h2>SEO- Search Engine Optimization</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+		
+		<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>	
+	<div class="mb-5" id="section_smm">
+		<h2>Social Media Marketing</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+		
+		<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>	
+	<div id="section_eCom">
+		<h2>eCom Power Selling</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+		
+		<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>	
+	
+	<div style="width:100%;height:900px;"></div>
+</div><!-- container -->
+	    <div class="container_full team_bg">
+      <div class="row team_color">
+        <div class="col- team_wrp">
+          <h3 id="team">Our Team</h3>
+          <div class="owl-carousel " >
+            <div class="item">
+			<div class="clear"><img src="resourses/img/sujon.jpg" class="floatleft img-fluid rounded b-shadow-a" style="width:80px;height:80px;border-radius: 50px!important;" alt=""></div>			
+              <h2>Md Sujon Ahmed</h2>
+			  <p> This book is a treatise on the br theory of ethics, very popular during the Renaissance.<br /> The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.word <br />in classical literature, discovered the undoubtable source.</p>
+            </div>
+            <div class="item">
+			<div class="clear"><img src="resourses/img/sumon.jpg" class="floatleft img-fluid rounded b-shadow-a" style="width:80px;height:80px;border-radius: 50px!important;" alt=""></div>	
+              <h2>Md Sumon Ahmed</h2>
+			  <p> This book is a treatise on the br theory of ethics, very popular during the Renaissance.<br /> The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.word <br />in classical literature, discovered the undoubtable source.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <script src="resourses/js/owl.carousel.js"></script>
+	<!-- JavaScript Files -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>	
+	<script>
+		$(function() {
+		  var topoffset = 70; //variable for menu height
+
+		  //Use smooth scrolling when clicking on navigation
+		  $('.navbar-nav a').click(function() {
+			if (location.pathname.replace(/^\//,'') === 
+			  this.pathname.replace(/^\//,'') && 
+			  location.hostname === this.hostname) {
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html,body').animate({
+				  scrollTop: target.offset().top-topoffset
+				}, 500);
+				return false;
+			  } //target.length
+			} //click function
+		  }); //smooth scrolling
+
+		});		
+		
+$('.custom1').owlCarousel({
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    items:1,
+    margin:30,
+    stagePadding:30,
+    smartSpeed:450
+});
+	</script>
+</body>
+</html>
