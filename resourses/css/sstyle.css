@@ -467,9 +467,8 @@ a:hover {
 #header .logo img {
   max-height: 40px;
 }
-
 #header.header-scrolled {
-	background: rgba(255, 255, 255, 0);
+	background: rgba(0, 0, 0, 0.53);
 	padding: 12px 0;
 }
 
